@@ -69,4 +69,4 @@ fastlane/test_output
 
 .idea/
 
-Google-Service-Info.plist
+GoogleService-Info.plist

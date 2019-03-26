@@ -5,7 +5,6 @@
 //  Created by Martin Løseth Jensen on 26/03/2019.
 //  Copyright © 2019 Martin Løseth Jensen. All rights reserved.
 //
-
 import UIKit
 
 class TableViewController: UITableViewController {
