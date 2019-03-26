@@ -13,7 +13,7 @@
         <!--Table View Controller-->
         <scene sceneID="1v7-c2-hh4">
             <objects>
-                <tableViewController id="BGX-4p-YLC" customClass="TableViewController" customModule="FilesInFirebase" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="BGX-4p-YLC" customClass="TableViewController" customModule="FilesInFirebaseV2" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="HsE-pt-vvt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -57,49 +57,65 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FilesInFirebase" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FilesInFirebaseV2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U03-i3-yKi">
-                                <rect key="frame" x="67" y="467" width="240" height="180"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U03-i3-yKi">
+                                <rect key="frame" x="67" y="467" width="241" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="Hv8-oj-8EK"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODS-mE-iTf">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODS-mE-iTf">
                                 <rect key="frame" x="67" y="415" width="114" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Download Image"/>
                                 <connections>
                                     <action selector="downloadImagePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hci-oa-ktf"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dLJ-6d-6Dd">
-                                <rect key="frame" x="67" y="53" width="240" height="73"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dLJ-6d-6Dd">
+                                <rect key="frame" x="67" y="64" width="241" height="133"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="133" id="ryZ-yn-DFo"/>
+                                </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hln-1A-U2F">
-                                <rect key="frame" x="67" y="155" width="173" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Save image and then text"/>
-                                <connections>
-                                    <action selector="savePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TfA-CA-JyG"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Vk-MD-cCh">
-                                <rect key="frame" x="319" y="77" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Vk-MD-cCh">
+                                <rect key="frame" x="316" y="64" width="43" height="30"/>
                                 <state key="normal" title="Feed"/>
                                 <connections>
                                     <segue destination="BGX-4p-YLC" kind="show" id="21p-8X-E9R"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hln-1A-U2F">
+                                <rect key="frame" x="67" y="205" width="173" height="30"/>
+                                <state key="normal" title="Save image and then text"/>
+                                <connections>
+                                    <action selector="savePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TfA-CA-JyG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1Vk-MD-cCh" firstAttribute="leading" secondItem="dLJ-6d-6Dd" secondAttribute="trailing" constant="8" symbolic="YES" id="1Sr-fC-OKZ"/>
+                            <constraint firstItem="ODS-mE-iTf" firstAttribute="leading" secondItem="U03-i3-yKi" secondAttribute="leading" id="8zB-Sc-uE7"/>
+                            <constraint firstAttribute="bottom" secondItem="U03-i3-yKi" secondAttribute="bottom" constant="20" symbolic="YES" id="Hut-Vu-6St"/>
+                            <constraint firstItem="1Vk-MD-cCh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="J9e-cu-E2A"/>
+                            <constraint firstItem="Hln-1A-U2F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="Mub-A3-neP"/>
+                            <constraint firstItem="dLJ-6d-6Dd" firstAttribute="trailing" secondItem="U03-i3-yKi" secondAttribute="trailing" id="Pva-ZT-5nH"/>
+                            <constraint firstItem="1Vk-MD-cCh" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="RDp-GG-d0a"/>
+                            <constraint firstItem="U03-i3-yKi" firstAttribute="top" secondItem="ODS-mE-iTf" secondAttribute="bottom" constant="22" id="UnF-Hj-oxB"/>
+                            <constraint firstItem="Hln-1A-U2F" firstAttribute="top" secondItem="dLJ-6d-6Dd" secondAttribute="bottom" constant="8" symbolic="YES" id="otF-2U-epe"/>
+                            <constraint firstItem="dLJ-6d-6Dd" firstAttribute="top" secondItem="1Vk-MD-cCh" secondAttribute="top" id="t3Q-Pp-ZtD"/>
+                            <constraint firstItem="U03-i3-yKi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t9R-S7-bby"/>
+                            <constraint firstItem="Hln-1A-U2F" firstAttribute="leading" secondItem="ODS-mE-iTf" secondAttribute="leading" id="v2r-jr-vYY"/>
+                            <constraint firstItem="Hln-1A-U2F" firstAttribute="leading" secondItem="dLJ-6d-6Dd" secondAttribute="leading" id="yoa-36-qRs"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="OEa-t1-7SW"/>

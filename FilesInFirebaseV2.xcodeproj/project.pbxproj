@@ -11,6 +11,7 @@
 		1A6ABFFF79C025386A81E11E /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6AB7EF5ACED0FDE9165E08 /* FirebaseService.swift */; };
 		49AE16BF224A5C1C00C09B05 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49AE16BE224A5C1C00C09B05 /* GoogleService-Info.plist */; };
 		49AE16C1224A5E1500C09B05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49AE16C0224A5E1500C09B05 /* Main.storyboard */; };
+		49AE16E5224A6ABF00C09B05 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AE16E4224A6ABF00C09B05 /* TableViewController.swift */; };
 		49F677D322450DF200946417 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F677D222450DF200946417 /* AppDelegate.swift */; };
 		49F677D522450DF200946417 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F677D422450DF200946417 /* ViewController.swift */; };
 		49F677DA22450DF200946417 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49F677D922450DF200946417 /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 		4320B59B05ED46063DE76C50 /* Pods-FilesInFirebaseV2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FilesInFirebaseV2Tests.release.xcconfig"; path = "Target Support Files/Pods-FilesInFirebaseV2Tests/Pods-FilesInFirebaseV2Tests.release.xcconfig"; sourceTree = "<group>"; };
 		49AE16BE224A5C1C00C09B05 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		49AE16C0224A5E1500C09B05 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		49AE16E4224A6ABF00C09B05 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		49F677CF22450DF200946417 /* FilesInFirebaseV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilesInFirebaseV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49F677D222450DF200946417 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49F677D422450DF200946417 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 			children = (
 				49F677D222450DF200946417 /* AppDelegate.swift */,
 				49F677D422450DF200946417 /* ViewController.swift */,
+				49AE16E4224A6ABF00C09B05 /* TableViewController.swift */,
 				49F677D922450DF200946417 /* Assets.xcassets */,
 				49AE16C0224A5E1500C09B05 /* Main.storyboard */,
 				49F677DB22450DF200946417 /* LaunchScreen.storyboard */,
@@ -449,6 +452,7 @@
 				49F677D522450DF200946417 /* ViewController.swift in Sources */,
 				49F677D322450DF200946417 /* AppDelegate.swift in Sources */,
 				1A6AB68FCF014A3764FDFDE3 /* Note.swift in Sources */,
+				49AE16E5224A6ABF00C09B05 /* TableViewController.swift in Sources */,
 				1A6ABFFF79C025386A81E11E /* FirebaseService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
